@@ -22,7 +22,7 @@ public class Main {
     system.actorOf(SpringExtProvider.get(system).props("CountingActor"), "counter");
     //System.out.println(system.settings());
     try {
-      
+      System.out.println("Waiting for messages");
     } catch (Exception e) {
       System.err.println("Failed getting result: " + e.getMessage());
       throw e;
